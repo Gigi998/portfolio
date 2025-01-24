@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ProfileCard from "./(components)/Application/ProfileCard/ProfileCard";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,11 +14,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='bg-invert min-h-screen flex flex-col max-w-7xl mx-auto'>
-        {/* <div className='text-secondary'>Header</div> */}
-        <div className='min-h-full py-40 px-10 flex justify-between'>
-          {children}
-          <ProfileCard />
-        </div>
+        <div className='min-h-full py-40 px-10'>{children}</div>
       </body>
     </html>
   );
