@@ -1,18 +1,21 @@
 import ProjectItem from "../ProjectItem/ProjectItem";
+import EndemicAppImage from "@/assets/images/endemicHome.png";
 
 const ProjectsContainer = async () => {
   const projects = [
     {
       id: 1,
       name: "Endemic NFT Marketplace",
-      siteLink: "https://endemic.app",
+      siteLink: "https://endemic.ap",
       codeLink: "somelink",
+      imageSrc: EndemicAppImage,
     },
     {
       id: 2,
       name: "SBScanner",
       siteLink: "somelink",
       codeLink: "somelink",
+      imageSrc: EndemicAppImage,
     },
   ];
 
@@ -27,6 +30,7 @@ const ProjectsContainer = async () => {
               name={project.name}
               codeLink={project.codeLink}
               siteLink={project.siteLink}
+              imageSrc={project.imageSrc}
             />
           );
         })}

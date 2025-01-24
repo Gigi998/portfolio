@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=''>
+    <div className='mt-10'>
       <div className='flex flex-col'>
-        <span className='text-lg text-secondary'>Hello,</span>
+        <span className='text-lg text-secondary'>Hi,</span>
         <span className='text-7xl'>
           I am <span className='text-blue-700'>Luigi</span>
         </span>
