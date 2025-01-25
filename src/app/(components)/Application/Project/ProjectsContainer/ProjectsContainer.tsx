@@ -6,9 +6,10 @@ const ProjectsContainer = async () => {
     {
       id: 1,
       name: "Endemic NFT Marketplace",
-      siteLink: "https://endemic.ap",
-      codeLink: "somelink",
+      siteLink: "https://endemic.app",
       imageSrc: EndemicAppImage,
+      description:
+        "Endemic is a decentralized marketplace for digital assets on the Ethereum blockchain but, with a twist. Besides usual buying and selling art, through this artistic platform we encourage all users to connect and interact.",
     },
     {
       id: 2,
@@ -16,6 +17,8 @@ const ProjectsContainer = async () => {
       siteLink: "somelink",
       codeLink: "somelink",
       imageSrc: EndemicAppImage,
+      description:
+        "SBScanner is platform, where users can put their own crypto projects, rate projects, talk with community etc.",
     },
   ];
 
@@ -24,15 +27,7 @@ const ProjectsContainer = async () => {
       <span className='text-7xl'>Projects</span>
       <div className='flex justify-center gap-x-10 mt-10'>
         {projects.map((project) => {
-          return (
-            <ProjectItem
-              key={project.id}
-              name={project.name}
-              codeLink={project.codeLink}
-              siteLink={project.siteLink}
-              imageSrc={project.imageSrc}
-            />
-          );
+          return <ProjectItem key={project.id} {...project} />;
         })}
       </div>
     </div>

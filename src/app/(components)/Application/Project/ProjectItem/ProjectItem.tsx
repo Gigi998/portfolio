@@ -6,18 +6,12 @@ import ProjectAboutModal from "../ProjectAboutModal/ProjectAboutModal";
 interface Props {
   name: string;
   description: string;
-  siteLink: string;
-  codeLink: string;
+  siteLink?: string;
+  codeLink?: string;
   imageSrc: string | StaticImageData;
 }
 
-const ProjectItem = ({
-  name,
-  siteLink,
-  codeLink,
-  imageSrc,
-  description,
-}: Props) => {
+const ProjectItem = ({ name, imageSrc, ...props }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -38,10 +32,8 @@ const ProjectItem = ({
       <ProjectAboutModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        siteLink={siteLink}
-        codeLInk={codeLink}
-        description={description}
         name={name}
+        {...props}
       />
     </>
   );

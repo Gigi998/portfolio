@@ -1,6 +1,7 @@
 "use client";
 import Modal from "@/app/(components)/Basic/Modal/Modal";
 import Button from "@/app/(components)/Basic/Button/Button";
+import { Type } from "@/app/(components)/Basic/Button/constants";
 
 interface Props {
   isOpen: boolean;
@@ -24,14 +25,27 @@ const ProjectAboutModal = ({
       hasCloseButton={true}
       isOpen={isOpen}
       onClose={onClose}
-      className='w-[300px]'
-      title='Abount'
-      subtitle={name}
+      className='w-[400px]'
+      title={name}
     >
-      <div>{description}</div>
-      <div className='flex items-center justify-between'>
-        <Button className='w-20 text-invert'>Code</Button>
-        <Button className='w-20 text-invert'>Site</Button>
+      <div className=''>{description}</div>
+      <div className='flex items-center gap-x-5 justify-center mt-5'>
+        {codeLInk && (
+          <Button
+            element={Type.Link}
+            href={codeLInk}
+            className='w-20 text-invert'
+          >
+            Code
+          </Button>
+        )}
+        <Button
+          element={Type.Link}
+          href={siteLink}
+          className='w-20 text-invert'
+        >
+          Site
+        </Button>
       </div>
     </Modal>
   );
