@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-10'>
       <div className='flex flex-col'>
-        <span className='text-lg text-secondary'>Hello,</span>
+        <span className='text-lg text-secondary'>Hi,</span>
         <span className='text-7xl'>
-          I am <span className='text-blue-700'>Luigi</span>
+          I am <span className='text-blue-500'>Luigi</span>
         </span>
         <span className='text-7xl'>Full Stack Developer</span>
       </div>

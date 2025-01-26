@@ -3,7 +3,7 @@ import { contactsInfo } from "../constants";
 
 const ContactInfoContainer = () => {
   return (
-    <div className='flex items-center justify-center gap-x-16  mt-24'>
+    <div className='flex items-center justify-center gap-x-16'>
       {contactsInfo.map((item, index) => (
         <div
           className='text-secondary text-xl flex items-center gap-x-16'
