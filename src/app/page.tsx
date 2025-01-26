@@ -3,6 +3,7 @@ import ContactInfoContainer from "./(components)/Application/ContactInfo/Contact
 import ProfileCard from "./(components)/Application/Profile/ProfileCard/ProfileCard";
 import ProjectsContainer from "./(components)/Application/Project/ProjectsContainer/ProjectsContainer";
 import SectionWrapper from "./(components)/Wrapper/SectionWrapper/SectionWrapper";
+import ExperienceContainer from "./(components)/Application/Experience/ExperienceContainer/ExperienceContainer";
 
 export default function Home() {
   return (
@@ -14,9 +15,13 @@ export default function Home() {
       <SectionWrapper>
         <ContactInfoContainer />
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper title='Projects'>
         <ProjectsContainer />
       </SectionWrapper>
+      <SectionWrapper title='How it all started'>
+        <ExperienceContainer />
+      </SectionWrapper>
+      <SectionWrapper title="How it's going">Bla bla</SectionWrapper>
     </>
   );
 }

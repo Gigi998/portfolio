@@ -35,7 +35,7 @@ const ProjectItem = ({
           <div className='flex flex-col gap-y-4'>
             <ProjectDescription title='About' description={description} />
             <ProjectDescription
-              title='Techstack'
+              title='Tech stack'
               description={technologyDescription}
             />
             {notes ? (
