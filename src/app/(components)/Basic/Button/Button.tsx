@@ -29,11 +29,11 @@ const Button = ({
 }: Props) => {
   const generateButtonsBody = () => {
     return (
-      <>
+      <div>
         {startIcon && <span>{startIcon}</span>}
         {children}
         {endIcon && <span>{endIcon}</span>}
-      </>
+      </div>
     );
   };
 
