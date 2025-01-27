@@ -7,9 +7,9 @@ interface Props {
 
 const ProjectDescription = ({ title, description }: Props) => {
   return (
-    <div className='text-secondary flex flex-col'>
-      <span className='font-bold text-primary text-left'>{title}</span>
-      <span className='text-left text-secondary'>{description}</span>
+    <div className='flex flex-col text-body-2'>
+      <span className='font-bold'>{title}</span>
+      <span className='text-secondary'>{description}</span>
     </div>
   );
 };
