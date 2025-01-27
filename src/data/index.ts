@@ -1,4 +1,5 @@
 import EndemicAppImage from "@/assets/images/endemicHome.png";
+import SbscannerAppImage from "@/assets/images/sbscannerHome.png";
 import { Experience } from "./types";
 
 const endemic = {
@@ -13,21 +14,27 @@ const endemic = {
   technologyDescription: `On the frontend, we used Next.js for server-side rendering (SSR), TanStack Query for state management, and styled the application with Tailwind CSS and CSS Modules. Forms were managed with Formik, and validation was handled using Yup.
 The backend was built with NestJS and a PostgreSQL database. Authentication was implemented using JWT, managed via the Passport library. We utilized Prisma for efficient database querying.`,
   notes:
-    "Entire code is currently private and it is not available, I am very glad to speak about logic and patterns we used.",
+    "The entire code is currently private and not publicly available, but the application is live and running. I’d be happy to discuss the logic and design patterns we implemented!",
 };
 
 export const projects = [
   endemic,
   {
-    id: 2,
     name: "SBScanner",
+    id: 2,
     siteLink: "somelink",
-    codeLink: "somelink",
-    imageSrc: EndemicAppImage,
-    description:
-      "SBScanner is platform, where users can put their own crypto projects, rate projects, talk with community etc.",
-    technologyDescription:
-      "On the frontend, we used Next.js for server-side rendering (SSR), styled with Tailwind CSS and CSS Modules, and managed forms with Formik and Yup for validation. The backend was built using NestJS and a PostgreSQL database.",
+    codeLink: "https://github.com/orgs/StoneBlock-Blockchain/repositories?",
+    imageSrc: SbscannerAppImage,
+    description: `
+    The Stoneblock Scanner was a full-stack application I developed while working at Endemic. The app's primary functionality allowed users to post cryptocurrency projects,
+    or "nominations," which the community could then engage with by voting, rating, and commenting. Once a nomination was created, it could be approved based on the community's
+    ratings and votes. The platform aimed to foster engagement and provide valuable insights into various crypto projects through collective participation.`,
+    technologyDescription: `
+    The frontend was built using React, Next.js, and Tailwind CSS, while the backend was powered by Node.js with Express.
+    We used PostgreSQL as the database, managed through Prisma, and implemented session-based authentication to ensure secure user access.
+    `,
+    notes:
+      "The application is not currently live, but feel free to explore the code. I’m always excited to discuss it and share insights about the project!",
   },
 ];
 
@@ -35,8 +42,9 @@ export const experiencesStart: Experience[] = [
   {
     id: 1,
     title: "First line of code",
-    about: `After realizing that a career as an electrician wasn't the right fit for me, I decided to pursue my passion for coding.
-       I began my journey with Python as my first programming language.`,
+    about: `After realizing that a career as an electrician wasn't the right fit for me, 
+    I decided to pursue my passion for coding. I began my journey with Python as my first programming language.
+    I also had some prior coding experience from college, where I was introduced to the C++ programming language.`,
     date: "October, 2021",
   },
   {
