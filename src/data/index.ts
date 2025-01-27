@@ -20,7 +20,6 @@ The backend was built with NestJS and a PostgreSQL database. Authentication was 
 const sbscanner = {
   id: 2,
   name: "SBScanner",
-  siteLink: "somelink",
   codeLink: "https://github.com/orgs/StoneBlock-Blockchain/repositories?",
   imageSrc: SbscannerAppImage,
   description: `
