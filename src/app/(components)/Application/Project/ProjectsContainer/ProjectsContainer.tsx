@@ -7,6 +7,7 @@ const ProjectsContainer = async () => {
       {projects.map((project) => {
         return <ProjectItem key={project.id} {...project} />;
       })}
+      <hr className='w-full my-10 bg-secondary' />
     </div>
   );
 };
