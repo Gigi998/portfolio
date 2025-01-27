@@ -17,31 +17,30 @@ The backend was built with NestJS and a PostgreSQL database. Authentication was 
     "The entire code is currently private and not publicly available, but the application is live and running. I’d be happy to discuss the logic and design patterns we implemented!",
 };
 
-export const projects = [
-  endemic,
-  {
-    name: "SBScanner",
-    id: 2,
-    siteLink: "somelink",
-    codeLink: "https://github.com/orgs/StoneBlock-Blockchain/repositories?",
-    imageSrc: SbscannerAppImage,
-    description: `
+const sbscanner = {
+  id: 2,
+  name: "SBScanner",
+  siteLink: "somelink",
+  codeLink: "https://github.com/orgs/StoneBlock-Blockchain/repositories?",
+  imageSrc: SbscannerAppImage,
+  description: `
     The Stoneblock Scanner was a full-stack application I developed while working at Endemic. The app's primary functionality allowed users to post cryptocurrency projects,
     or "nominations," which the community could then engage with by voting, rating, and commenting. Once a nomination was created, it could be approved based on the community's
     ratings and votes. The platform aimed to foster engagement and provide valuable insights into various crypto projects through collective participation.`,
-    technologyDescription: `
+  technologyDescription: `
     The frontend was built using React, Next.js, and Tailwind CSS, while the backend was powered by Node.js with Express.
     We used PostgreSQL as the database, managed through Prisma, and implemented session-based authentication to ensure secure user access.
     `,
-    notes:
-      "The application is not currently live, but feel free to explore the code. I’m always excited to discuss it and share insights about the project!",
-  },
-];
+  notes:
+    "The application is not currently live, but feel free to explore the code. I’m always excited to discuss it and share insights about the project!",
+};
+
+export const projects = [endemic, sbscanner];
 
 export const experiencesStart: Experience[] = [
   {
     id: 1,
-    title: "First line of code",
+    title: "Starting My Coding Journey",
     about: `After realizing that a career as an electrician wasn't the right fit for me, 
     I decided to pursue my passion for coding. I began my journey with Python as my first programming language.
     I also had some prior coding experience from college, where I was introduced to the C++ programming language.`,
@@ -49,21 +48,21 @@ export const experiencesStart: Experience[] = [
   },
   {
     id: 2,
-    title: "Small projects, big steps",
+    title: "Venturing into Web Development",
     about: `After spending a few months learning Python, I transitioned to web development, starting with HTML, CSS, and JavaScript.
      Shortly after, I delved into React and began building basic websites to apply my skills.`,
     date: "February, 2022",
   },
   {
     id: 3,
-    title: "Failed Job applications",
-    about: `About a year and a half after writing my first line of code, 
-    I started applying for jobs. It was challenging, and I struggled at first.`,
+    title: "Overcoming Job Search Challenges",
+    about: `About a year and a half after writing my first line of code, I began applying for jobs in the tech industry. 
+    The process was tough, and I faced many rejections, which made me question my skills and the path I had chosen. Despite the setbacks, I didn’t give up. `,
     date: "February, 2023",
   },
   {
     id: 4,
-    title: "Backend here we go",
+    title: "Backend Here We Go:Expanding My Skillset",
     about: `After struggling to find a job, I decided to learn backend development, which had initially felt overwhelming. During this process, 
     I began to grasp how real-world applications are built and how everything fits together.
     I also built my first full-stack application, putting my newfound knowledge into practice.
@@ -116,5 +115,16 @@ export const experienceCurrent: Experience[] = [
     I was responsible for designing and implementing the entire logic on my own.
     `,
     date: "March, 2024",
+  },
+  {
+    id: 5,
+    title: "Mastering Advanced Features and Design Patterns",
+    about: `
+    As I continued to grow in my development career, I dove deeper into backend patterns, learning concepts like Abstract Factory to build more scalable and maintainable code.
+    I also worked on more advanced backend features, including implementing quests and notification systems, which added significant functionality to the application.
+    On the frontend, I tackled more complex challenges, such as building a multi-select dropdown, which required a solid understanding of UI/UX principles and interactivity.
+    These tasks pushed me to refine both my frontend and backend skills and strengthened my understanding of how to integrate sophisticated features into a seamless application.
+    `,
+    date: "June, 2024",
   },
 ];
