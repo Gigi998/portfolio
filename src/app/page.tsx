@@ -4,6 +4,7 @@ import ProfileCard from "./(components)/Application/Profile/ProfileCard/ProfileC
 import ProjectsContainer from "./(components)/Application/Project/ProjectsContainer/ProjectsContainer";
 import SectionWrapper from "./(components)/Wrapper/SectionWrapper/SectionWrapper";
 import ExperienceContainer from "./(components)/Application/Experience/ExperienceContainer/ExperienceContainer";
+import { experienceCurrent, experiencesStart } from "@/data";
 
 export default function Home() {
   return (
@@ -19,9 +20,11 @@ export default function Home() {
         <ProjectsContainer />
       </SectionWrapper>
       <SectionWrapper title='How it all started'>
-        <ExperienceContainer />
+        <ExperienceContainer experiences={experiencesStart} />
       </SectionWrapper>
-      <SectionWrapper title="How it's going">Bla bla</SectionWrapper>
+      <SectionWrapper title="How it's going">
+        <ExperienceContainer experiences={experienceCurrent} />
+      </SectionWrapper>
     </>
   );
 }

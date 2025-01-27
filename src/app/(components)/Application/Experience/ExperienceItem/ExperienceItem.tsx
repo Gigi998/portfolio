@@ -9,15 +9,20 @@ interface Props {
 
 const ExperienceItem = ({ title, about, date }: Props) => {
   return (
-    <div className='border-l-2 border-secondary h-20'>
+    <div className='border-l-2 border-secondary h-auto'>
       <div className='relative w-0'>
         <Tooltip text={date}>
           <div className='rounded-full w-3 h-3 border-2 bg-secondary border-secondary absolute left-[-7px] top-[6px]' />
         </Tooltip>
       </div>
       <div className='ml-4 flex flex-col'>
-        <span className='text-primary font-bold'>{title}</span>
-        <span className='text-secondary mr-20'>{about}</span>
+        <span className='text-primary font-bold flex'>
+          {title}
+          <span className='ml-auto inline-block font-light text-sm'>
+            {date}
+          </span>
+        </span>
+        <span className='text-secondary mr-32'>{about}</span>
       </div>
     </div>
   );

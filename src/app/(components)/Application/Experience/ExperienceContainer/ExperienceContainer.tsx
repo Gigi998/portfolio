@@ -1,7 +1,11 @@
-import { experiences } from "@/data";
 import ExperienceItem from "../ExperienceItem/ExperienceItem";
+import { Experience } from "@/data/types";
 
-const ExperienceContainer = () => {
+interface Props {
+  experiences: Experience[];
+}
+
+const ExperienceContainer = ({ experiences }: Props) => {
   return (
     <div className='flex flex-col justify-center gap-x-10 mt-10'>
       {experiences.map((experience) => {
