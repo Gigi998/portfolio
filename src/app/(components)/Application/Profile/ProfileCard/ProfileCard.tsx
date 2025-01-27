@@ -32,8 +32,8 @@ const ProfileCard = () => {
         alt='profile'
         className='rounded-xl overflow-hidden box-border'
       />
-      <span className='text-2xl mt-5 font-semibold'>Luigi Drnasin</span>
-      <span className='text-lg mt-10 font-thin'>Software Developer</span>
+      <span className='text-sm-heading mt-5 font-semibold'>Luigi Drnasin</span>
+      <span className='text-body-1 mt-10 font-thin'>Software Developer</span>
       <ProfileSocialLinks socialLinks={socialLinks} />
     </div>
   );

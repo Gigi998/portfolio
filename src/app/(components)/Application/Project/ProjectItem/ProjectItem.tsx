@@ -29,7 +29,7 @@ const ProjectItem = ({
         <hr className='w-full my-10 bg-secondary' />
         <div className='flex gap-x-24'>
           <div className='my-auto text-center'>
-            <div className='text-primary text-3xl mb-10'>{name}</div>
+            <div className='text-primary text-sm-heading mb-10'>{name}</div>
             <ProjectImage name={name} src={imageSrc} link={siteLink} />
           </div>
           <div className='flex flex-col gap-y-4'>

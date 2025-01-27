@@ -4,13 +4,13 @@ const Hero = () => {
   return (
     <div className='mt-10'>
       <div className='flex flex-col'>
-        <span className='text-lg text-secondary'>Hi,</span>
-        <span className='text-7xl'>
-          I am <span className='text-blue-500'>Luigi</span>
+        <span className='text-body-1 text-secondary'>Hi,</span>
+        <span className='text-heading'>
+          I am <span className='text-blue'>Luigi</span>
         </span>
-        <span className='text-7xl'>Full Stack Developer</span>
+        <span className='text-heading'>Full Stack Developer</span>
       </div>
-      <p className='text-lg text-secondary mt-[20px]'>
+      <p className='text-body-1 text-secondary mt-[20px]'>
         I'm really passionate about software development 💻 and
         finance/investing 📈.
         <br /> I love building full-stack apps with tools like React, Next.js,

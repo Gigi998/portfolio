@@ -41,7 +41,7 @@ const Button = ({
     return {
       onClick: (e: any) => onClick?.(e),
       className: twMerge(
-        "text-primary px-4 py-3 flex items-center justify-center gap-x-2 border-2 border-invert rounded-full h-10 text-[18px] leading-[22px] shadow-[0_2px_0_0_#121212] hover:bg-blue-500",
+        "text-primary px-4 py-3 flex items-center justify-center gap-x-2 border-2 border-invert rounded-full h-10 text-[18px] leading-[22px] shadow-[0_2px_0_0_#121212] hover:bg-blue",
         className
       ),
       disabled: disabled,
