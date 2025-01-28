@@ -26,7 +26,7 @@ const ProfileCard = () => {
   ];
 
   return (
-    <div className='bg-primary w-[300px] h-[500px] rounded-xl text-invert p-6 flex flex-col items-center'>
+    <div className='bg-primary w-[300px] h-[500px] rounded-xl text-invert p-6 flex flex-col items-center lg:mt-0 mt-4'>
       <Image
         src={ProfilePicture}
         alt='profile'

@@ -20,7 +20,7 @@ The backend was built with NestJS and a PostgreSQL database. Authentication was 
 const sbscanner = {
   id: 2,
   name: "SBScanner",
-  codeLink: "https://github.com/orgs/StoneBlock-Blockchain/repositories?",
+  codeLink: "https://github.com/orgs/Stoneblock-Scanner-local/repositories",
   imageSrc: SbscannerAppImage,
   description: `
     The Stoneblock Scanner was a full-stack application I developed while working at Endemic. The app's primary functionality allowed users to post cryptocurrency projects,

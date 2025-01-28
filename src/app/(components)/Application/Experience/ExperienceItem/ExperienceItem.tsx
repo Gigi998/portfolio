@@ -19,7 +19,9 @@ const ExperienceItem = ({ title, about, date }: Props) => {
             {date}
           </span>
         </span>
-        <span className='text-body-2 text-secondary mr-32 mb-6'>{about}</span>
+        <span className='text-body-2 text-secondary lg:mr-32 mb-6'>
+          {about}
+        </span>
       </div>
     </div>
   );

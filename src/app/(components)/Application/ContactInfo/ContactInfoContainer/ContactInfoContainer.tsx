@@ -3,7 +3,7 @@ import { contactsInfo } from "../constants";
 
 const ContactInfoContainer = () => {
   return (
-    <div className='flex items-center justify-center gap-x-16'>
+    <div className='flex items-center justify-center gap-x-16 flex-col lg:flex-row gap-y-3'>
       {contactsInfo.map((item, index) => (
         <div
           className='text-secondary text-xl flex items-center gap-x-16'
@@ -11,7 +11,7 @@ const ContactInfoContainer = () => {
         >
           {item.text}
           {contactsInfo.length !== index + 1 && (
-            <span className='w-[2px] h-10 bg-secondary block' />
+            <span className='w-[2px] h-10 bg-secondary lg:block hidden' />
           )}
         </div>
       ))}

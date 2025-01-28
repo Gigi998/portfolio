@@ -26,10 +26,12 @@ const ProjectItem = ({
   return (
     <div className='flex flex-col items-center'>
       <div className='flex flex-col w-full'>
-        <hr className='w-full my-10 bg-secondary' />
-        <div className='flex gap-x-24'>
-          <div className='my-auto text-center'>
-            <div className='text-primary text-sm-heading mb-10'>{name}</div>
+        <hr className='w-full lg:my-10 my-6 bg-secondary' />
+        <div className='flex gap-x-24 lg:flex-row flex-col items-center'>
+          <div className='lg:my-auto mb-4 flex items-center flex-col'>
+            <div className='text-primary text-sm-heading lg:mb-10 mb-6 text-center'>
+              {name}
+            </div>
             <ProjectImage name={name} src={imageSrc} link={siteLink} />
           </div>
           <div className='flex flex-col gap-y-4'>
