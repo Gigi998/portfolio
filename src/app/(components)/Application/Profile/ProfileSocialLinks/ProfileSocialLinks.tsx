@@ -13,7 +13,7 @@ interface Props {
 
 const ProfileSocialLinks = ({ socialLinks }: Props) => {
   return (
-    <div className='flex mt-auto'>
+    <div className='flex'>
       {socialLinks.map((link) => (
         <SocialLink icon={link.icon} href={link.href} key={link.id} />
       ))}

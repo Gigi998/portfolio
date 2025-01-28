@@ -18,7 +18,7 @@ const ProjectImage = ({ src, name, link }: Props) => {
             link ? "cursor-pointer:" : "cursor-default"
           )}
         >
-          <span className='mb-3 text-primary'>{name}</span>
+          <span className='mb-3 ml-3 text-primary'>{name}</span>
         </div>
       </>
     );

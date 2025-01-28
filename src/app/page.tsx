@@ -9,7 +9,7 @@ import { experienceCurrent, experiencesStart } from "@/data";
 export default function Home() {
   return (
     <>
-      <SectionWrapper className='flex'>
+      <SectionWrapper className='flex flex-col lg:flex-row mt-0 items-center'>
         <Hero />
         <ProfileCard />
       </SectionWrapper>
