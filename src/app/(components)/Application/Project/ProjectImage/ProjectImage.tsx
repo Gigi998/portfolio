@@ -11,7 +11,7 @@ const ProjectImage = ({ src, name, link }: Props) => {
   const content = () => {
     return (
       <>
-        <Image src={src} alt={name} className='w-[300px] h-full rounded-xl' />
+        <Image src={src} alt={name} className='object-cover rounded-xl' fill />
         <div
           className={twMerge(
             "md:flex md:justify-end md:flex-col rounded-xl w-full h-full absolute top-0  md:bg-gradient-to-b md:from-[rgba(0,0,0,0)] md:to-[rgba(0,0,0,0.6)]  md:transition-opacity md:opacity-0 md:hover:opacity-100 text-secondary",
@@ -24,7 +24,8 @@ const ProjectImage = ({ src, name, link }: Props) => {
     );
   };
 
-  const className = "border-1 w-[300px]  h-[200px] rounded-xl relative block";
+  const className =
+    "border-1 sm:w-[300px] sm:h-[200px] w-[250px] h-[170px] rounded-xl relative block";
 
   return (
     <>
