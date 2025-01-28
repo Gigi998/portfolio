@@ -26,14 +26,16 @@ const ProfileCard = () => {
   ];
 
   return (
-    <div className='bg-primary w-[300px] h-[500px] rounded-xl text-invert p-6 flex flex-col items-center lg:mt-0 mt-4'>
+    <div className='bg-primary w-[300px] h-full rounded-xl text-invert p-4 flex flex-col items-center  gap-y-5 lg:mt-0 mt-4'>
       <Image
         src={ProfilePicture}
         alt='profile'
-        className='rounded-xl overflow-hidden box-border'
+        className='rounded-xl overflow-hidden'
       />
-      <span className='text-sm-heading mt-5 font-semibold'>Luigi Drnasin</span>
-      <span className='text-body-1 mt-10 font-thin'>Software Developer</span>
+      <span className='text-sm-heading font-medium whitespace-nowrap'>
+        Luigi Drnasin
+      </span>
+      <span className='text-body-1 font-thin'>Software Developer</span>
       <ProfileSocialLinks socialLinks={socialLinks} />
     </div>
   );
