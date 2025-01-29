@@ -96,11 +96,10 @@ export const experienceCurrent: Experience[] = [
     id: 3,
     title: "Stoneblock scanner",
     about: `
-    While working at Endemic, my brother and I were tasked with developing a full-stack application called Stoneblock Scanner.
-    The project was highly challenging, with the core functionality allowing users to post crypto projects (nominations), which the community could then vote on, rate, and comment on.
-    We handled the entire project on our own, and all the knowledge I had gained at Endemic fit perfectly into this endeavor. Throughout the process, we learned a tremendous amount,
-    including implementing session-based authentication, designing backend architecture in Express, uploading and storing data on Cloudinary, integrating Nodemailer for email functionality,
-    building username-password login systems, and much more.
+    The Stoneblock Scanner was highly challenging, with its core functionality allowing users to post crypto projects (nominations),
+    which the community could then vote on, rate, and comment on. I handled a large part of the project on my own, and all the knowledge
+    I had gained at Endemic fit perfectly into this endeavor. Throughout the process, I learned a tremendous amount, including session authentication,
+    backend architecture in Express, Cloudinary integration, Nodemailer, and more.
     `,
     date: "December, 2023",
   },
@@ -119,10 +118,9 @@ export const experienceCurrent: Experience[] = [
     id: 5,
     title: "Mastering Advanced Features and Design Patterns",
     about: `
-    As I continued to grow in my development career, I dove deeper into backend patterns, learning concepts like Abstract Factory to build more scalable and maintainable code.
-    I also worked on more advanced backend features, including implementing quests and notification systems, which added significant functionality to the application.
-    On the frontend, I tackled more complex challenges, such as building a multi-select dropdown, which required a solid understanding of UI/UX principles and interactivity.
-    These tasks pushed me to refine both my frontend and backend skills and strengthened my understanding of how to integrate sophisticated features into a seamless application.
+   As I progressed in my development career, I delved deeper into backend patterns, learning concepts like Abstract Factory to create more scalable and maintainable code.
+   I also developed advanced backend features, including quest and notification systems. On the frontend, I tackled complex challenges,
+   such as building a multi-select dropdown that required a strong grasp of UI/UX principles and interactivity. These tasks further expanded my knowledge.
     `,
     date: "June, 2024",
   },
