@@ -15,7 +15,7 @@ const ExperienceItem = ({ title, about, date }: Props) => {
       <div className='ml-4 flex flex-col'>
         <span className='text-primary text-body-1 font-bold flex'>
           {title}
-          <span className='ml-auto inline-block font-light text-sm'>
+          <span className='ml-auto inline-block font-light text-sm opacity-80'>
             {date}
           </span>
         </span>
