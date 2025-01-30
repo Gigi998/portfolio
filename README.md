@@ -30,6 +30,8 @@ First, clone the repository using Git:
 git clone https://github.com/Gigi998/portfolio.git
 ```
 
+### Navigate to
+
 ### Install Dependencies
 
 Install all required dependencies using yarn:
