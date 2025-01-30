@@ -47,7 +47,7 @@ const Button = ({
         e: MouseEvent<HTMLAnchorElement> | MouseEvent<HTMLButtonElement>
       ) => onClick?.(e),
       className: twMerge(
-        "text-primary px-4 py-3 flex items-center justify-center gap-x-2 border-2 border-invert rounded-full h-10 text-[18px] leading-[22px] hover:bg-blue transition-all",
+        "text-primary px-4 py-3 flex items-center justify-center gap-x-2 border-2 border-primary rounded-full h-10 text-[18px] leading-[22px] hover:bg-blue transition-all",
         className
       ),
       disabled: disabled,

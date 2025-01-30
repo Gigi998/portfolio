@@ -47,11 +47,7 @@ const ProjectItem = ({
         </div>
       </div>
       {codeLink && (
-        <Button
-          element={Type.Link}
-          href={codeLink}
-          className='border-primary text-primary w-40 mt-10'
-        >
+        <Button element={Type.Link} href={codeLink} className='w-40 mt-10'>
           <div>Jump to Code</div>
         </Button>
       )}

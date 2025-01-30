@@ -21,7 +21,7 @@ export default function Home() {
       <SectionWrapper>
         <Button
           href={resumeUrl}
-          className='border-primary w-fit mx-auto h-14 mb-10'
+          className='w-fit mx-auto h-14 mb-10'
           element={Type.Link}
           download='Luigi_CV.pdf'
           startIcon={<ResumeIcon className='w-6 h-6 fill-primary' />}
