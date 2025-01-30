@@ -5,6 +5,7 @@ import ProjectsContainer from "./(components)/Application/Project/ProjectsContai
 import SectionWrapper from "./(components)/Wrapper/SectionWrapper/SectionWrapper";
 import ExperienceContainer from "./(components)/Application/Experience/ExperienceContainer/ExperienceContainer";
 import { experienceCurrent, experiencesStart } from "@/data";
+import EducationContainer from "./(components)/Application/Education/EducationContainer/EducationContainer";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       </SectionWrapper>
       <SectionWrapper title="How it's going">
         <ExperienceContainer experiences={experienceCurrent} />
+      </SectionWrapper>
+      <SectionWrapper title='Education'>
+        <EducationContainer />
       </SectionWrapper>
     </>
   );
