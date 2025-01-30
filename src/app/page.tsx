@@ -4,8 +4,12 @@ import ProfileCard from "./(components)/Application/Profile/ProfileCard/ProfileC
 import ProjectsContainer from "./(components)/Application/Project/ProjectsContainer/ProjectsContainer";
 import SectionWrapper from "./(components)/Wrapper/SectionWrapper/SectionWrapper";
 import ExperienceContainer from "./(components)/Application/Experience/ExperienceContainer/ExperienceContainer";
-import { experienceCurrent, experiencesStart } from "@/data";
+import { experienceCurrent, experiencesStart } from "@/shared/data";
 import EducationContainer from "./(components)/Application/Education/EducationContainer/EducationContainer";
+import Button from "./(components)/Basic/Button/Button";
+import { Type } from "./(components)/Basic/Button/constants";
+import ResumeIcon from "@/assets/icons/resume.svg";
+import { resumeUrl } from "@/shared/contants";
 
 export default function Home() {
   return (
@@ -15,6 +19,15 @@ export default function Home() {
         <ProfileCard />
       </SectionWrapper>
       <SectionWrapper>
+        <Button
+          href={resumeUrl}
+          className='border-primary w-fit mx-auto h-14 mb-10'
+          element={Type.Link}
+          download='Luigi_CV.pdf'
+          startIcon={<ResumeIcon className='w-6 h-6 fill-primary' />}
+        >
+          Download CV
+        </Button>
         <ContactInfoContainer />
       </SectionWrapper>
       <SectionWrapper title='Projects'>
