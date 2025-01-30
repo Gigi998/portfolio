@@ -27,5 +27,25 @@ To run the project on your local machine, follow these steps:
 First, clone the repository using Git:
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/Gigi998/portfolio.git
 ```
+
+### Install Dependencies
+
+Install all required dependencies using yarn:
+
+```bash
+yarn install
+```
+
+### Start the Dev Server
+
+Run the following command to start the development server:
+
+```bash
+yarn dev
+```
+
+By default, the project will be running at:
+
+**[http://localhost:3000](http://localhost:3000)**
