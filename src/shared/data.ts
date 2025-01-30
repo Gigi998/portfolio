@@ -1,6 +1,6 @@
 import EndemicAppImage from "@/assets/images/endemicHome.png";
 import SbscannerAppImage from "@/assets/images/sbscannerHome.png";
-import { Experience } from "./types";
+import { Experience } from "../shared/types";
 
 const endemic = {
   id: 1,

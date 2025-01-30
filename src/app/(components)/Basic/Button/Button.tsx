@@ -16,6 +16,7 @@ export interface Props {
   className?: string;
   href?: string;
   target?: string;
+  download?: string;
 }
 
 const Button = ({
@@ -28,14 +29,15 @@ const Button = ({
   className,
   href,
   target = "blank",
+  download,
 }: Props) => {
   const generateButtonsBody = () => {
     return (
-      <div>
+      <>
         {startIcon && <span>{startIcon}</span>}
         {children}
         {endIcon && <span>{endIcon}</span>}
-      </div>
+      </>
     );
   };
 
@@ -45,7 +47,7 @@ const Button = ({
         e: MouseEvent<HTMLAnchorElement> | MouseEvent<HTMLButtonElement>
       ) => onClick?.(e),
       className: twMerge(
-        "text-primary px-4 py-3 flex items-center justify-center gap-x-2 border-2 border-invert rounded-full h-10 text-[18px] leading-[22px] hover:bg-blue",
+        "text-primary px-4 py-3 flex items-center justify-center gap-x-2 border-2 border-invert rounded-full h-10 text-[18px] leading-[22px] hover:bg-blue transition-all",
         className
       ),
       disabled: disabled,
@@ -55,7 +57,11 @@ const Button = ({
   };
 
   if (element === Type.Link) {
-    return <a {...generateButtonsAttributes()}>{generateButtonsBody()}</a>;
+    return (
+      <a {...generateButtonsAttributes()} download={download}>
+        {generateButtonsBody()}
+      </a>
+    );
   } else {
     return (
       <button {...generateButtonsAttributes()}>{generateButtonsBody()}</button>

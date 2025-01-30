@@ -1,5 +1,5 @@
 import ExperienceItem from "../ExperienceItem/ExperienceItem";
-import { Experience } from "@/data/types";
+import { Experience } from "@/shared/types";
 
 interface Props {
   experiences: Experience[];

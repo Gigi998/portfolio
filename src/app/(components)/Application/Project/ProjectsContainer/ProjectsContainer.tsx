@@ -1,5 +1,5 @@
 import ProjectItem from "../ProjectItem/ProjectItem";
-import { projects } from "@/data";
+import { projects } from "@/shared/data";
 
 const ProjectsContainer = async () => {
   return (
