@@ -14,7 +14,7 @@ const EducationContainer = () => {
           University of Split
         </span>
         <span>University department of professional studies</span>
-        <span>Master's degree, Electrical and Electronics Engineering</span>
+        <span>{`Master's degree, Electrical and Electronics Engineering`}</span>
         <span>2017-2024</span>
       </div>
     </div>
