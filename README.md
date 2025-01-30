@@ -30,7 +30,13 @@ First, clone the repository using Git:
 git clone https://github.com/Gigi998/portfolio.git
 ```
 
-### Navigate to
+### Navigate to the Project Directory
+
+Move into the project folder:
+
+```bash
+cd portfolio
+```
 
 ### Install Dependencies
 
@@ -51,3 +57,4 @@ yarn dev
 By default, the project will be running at:
 
 **[http://localhost:3000](http://localhost:3000)**
+ss
