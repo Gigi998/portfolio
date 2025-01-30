@@ -57,4 +57,3 @@ yarn dev
 By default, the project will be running at:
 
 **[http://localhost:3000](http://localhost:3000)**
-ss
