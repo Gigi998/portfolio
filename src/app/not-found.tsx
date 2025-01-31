@@ -5,7 +5,7 @@ import PageWrapper from "./(components)/Wrapper/PageWrapper/PageWrapper";
 
 const NotFoundPage = () => {
   return (
-    <PageWrapper>
+    <PageWrapper className='items-center'>
       <span className='text-sm-heading font-semibold text-center'>
         Sorry, the requested page cound not be found.
       </span>

@@ -14,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='bg-invert min-h-screen flex flex-col max-w-7xl mx-auto'>
-        <div className='min-h-full lg:py-20 py-10  lg:px-10 px-4'>
-          {children}
-        </div>
+        <div className='min-h-full'>{children}</div>
       </body>
     </html>
   );

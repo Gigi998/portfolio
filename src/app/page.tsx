@@ -10,11 +10,12 @@ import Button from "./(components)/Basic/Button/Button";
 import { Type } from "./(components)/Basic/Button/constants";
 import ResumeIcon from "@/assets/icons/resume.svg";
 import { resumeUrl } from "@/shared/contants";
+import PageWrapper from "./(components)/Wrapper/PageWrapper/PageWrapper";
 
 export default function Home() {
   return (
-    <>
-      <SectionWrapper className='flex flex-col lg:flex-row mt-0 items-center'>
+    <PageWrapper className='py-4'>
+      <SectionWrapper className='flex flex-col lg:flex-row lg:mt-10 mt-0 items-center'>
         <Hero />
         <ProfileCard />
       </SectionWrapper>
@@ -42,6 +43,6 @@ export default function Home() {
       <SectionWrapper title='Education'>
         <EducationContainer />
       </SectionWrapper>
-    </>
+    </PageWrapper>
   );
 }

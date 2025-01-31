@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePicture from "@/assets/images/profile.png";
+import ProfilePicture from "@/assets/images/profile.jpg";
 import Image from "next/image";
 import LinkedInIcon from "@/assets/icons/logo-linkedin.svg";
 import EmailIcon from "@/assets/icons/logo-mail.svg";
@@ -26,11 +26,11 @@ const ProfileCard = () => {
   ];
 
   return (
-    <div className='bg-primary w-[300px] h-full rounded-xl text-invert p-4 flex flex-col items-center  gap-y-5 lg:mt-0 mt-4'>
+    <div className='bg-primary w-[300px] max-h-[500px] rounded-xl text-invert p-4 flex flex-col items-center  gap-y-5 lg:mt-0 mt-4'>
       <Image
         src={ProfilePicture}
         alt='profile'
-        className='rounded-xl overflow-hidden'
+        className='rounded-xl overflow-hidden object-cover'
       />
       <span className='text-sm-heading font-medium whitespace-nowrap'>
         Luigi Drnasin
