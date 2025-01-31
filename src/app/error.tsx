@@ -7,7 +7,7 @@ import Button from "./(components)/Basic/Button/Button";
 
 const ErrorPage = () => {
   return (
-    <PageWrapper>
+    <PageWrapper className='items-center'>
       <span className='text-3xl font-semibold'>
         Sorry, something went wrong.
       </span>

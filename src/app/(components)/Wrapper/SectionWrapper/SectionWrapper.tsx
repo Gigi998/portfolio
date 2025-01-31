@@ -8,7 +8,7 @@ interface Props {
 
 const SectionWrapper = ({ children, className, title }: Props) => {
   return (
-    <div className={twMerge("lg:my-20 my-10", className)}>
+    <div className={twMerge("lg:my-10 my-6", className)}>
       {title ? <div className='text-heading text-center'>{title}</div> : null}
       {children}
     </div>
