@@ -15,7 +15,7 @@ import PageWrapper from "./(components)/Wrapper/PageWrapper/PageWrapper";
 export default function Home() {
   return (
     <PageWrapper className='py-4'>
-      <SectionWrapper className='flex flex-col lg:flex-row lg:mt-10 mt-0 items-center'>
+      <SectionWrapper className='flex flex-col lg:flex-row lg:mt-10 mt-0 items-center justify-between'>
         <Hero />
         <ProfileCard />
       </SectionWrapper>
